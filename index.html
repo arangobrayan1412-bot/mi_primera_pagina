@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayan Garcia pagina web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página Web 🕶️</h1>
+    </header>
+
+    <main class="container">
+        
+        <section class="profile-section">
+            <h2 id="nombre">Brayan David Arango García </h2>
+            <p class="descripcion">
+                Hola 👋, soy Brayan Garcia, Tengo 17 años, actualmente vivo con mi mama y mi hermana menor 👩‍👧‍👦, Me gutan mucho los animales 🐶, Tengo una gata de mascota 🐈 y se llama Miel. Mi deporte favorito es la natacion 🏊, Me gustan mucho las motos 🏍️, Me gustan mucho los videojuegos 🎮, pero mas que todo los que son en linea 🛜.
+            </p>
+        </section>
+
+        <section class="game-section">
+            <h3>¿Puedes adivinar mi número favorito?</h3>
+            <p>Ingresa un número entre el 1 y el 100:</p>
+            <div class="input-group">
+                <input type="number" id="numeroFavorito" min="1" max="100">
+            </div>
+            <p id="mensajeJuego" class="mensaje-juego"></p>
+        </section>
+
+        <section class="pasiones-section">
+            <label for="selectPasiones">Elige una de mis pasiones: ⬇️</label>
+            <select id="selectPasiones" onchange="cambiarPasion()">
+                <option value="default">Selecciona una opción 👉</option>
+                <option value="natacion">Natación 🏊‍♂️</option>
+                <option value="motos">Motos 🏍️</option>
+                <option value="videojuegos">Videojuegos 🎮</option>
+            </select>
+
+            <p id="textoPasion" class="texto-pasion"></p>
+
+            <div class="img-container">
+                <img id="imagenPasion" src="img/programacion.jpg" alt="Imagen Programacion">
+            </div>
+        </section>
+
+        <section class="instructor-section">
+            <button class="btn-instructor" onclick="mostrarMensajeInstructor()">
+                🔒 Mensaje para el Instructor 
+            </button>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
